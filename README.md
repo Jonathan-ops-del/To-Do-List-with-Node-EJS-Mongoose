@@ -18,5 +18,5 @@ STEPS TO RUN CODE ON YOUR LOCAL BROWSER::
 9) In the Mongo Shell, now you can enter in "use todolistDB" to select this database. To see the collections enter in "show collections". You should have two collections : "items" & "lists". To see the documents    you have added or removed in these collections you will have to enter in "db.items.find()" for items & "db.lists.find()" for lists.
 
 
-**NOTE - To view the code-base for our live deployment of the To Do List using Heroku & MongoDB Atlas, simply enter in "git checkout deploy" in the code editor terminal to view the code in our deploy branch. The link provided here - https://intense-beyond-57366-6ad5f8fc5a99.herokuapp.com/ - will take you to our live application. Here, all the information you enter on the live To Do List Application will be saved on to a live database connection via MongodDB Atlas. 
+**NOTE - To view the code-base for our live deployment of the To Do List using Heroku & MongoDB Atlas, simply enter in "git checkout deploy" in the code editor terminal to view the code in our deploy branch. The link provided here - https://my-listtodo-app-14723614e91e.herokuapp.com/ - will take you to our live application. Here, all the information you enter on the live To Do List Application will be saved on to a live database connection via MongodDB Atlas. 
 
