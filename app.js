@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-john:Lakersjj27!@cluster0.jt8kr3a.mongodb.net/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = new mongoose.Schema({
   name: String
@@ -143,18 +143,6 @@ app.post("/delete",function(req,res){
 })
 
 
-
-
-app.get("/about", function(req, res){
-  res.render("about");
-});
-
-
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
-
-app.listen(port, function() {
+app.listen(3000, function() {
   console.log("Server has started Successfully");
 });
