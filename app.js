@@ -12,7 +12,11 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", {useNewUrlParser: true});
+const login = "mongodb+srv://admin-john:";
+const end = "@cluster0.jt8kr3a.mongodb.net/";
+const database = "todolistDB";
+const pw = process.env.MONGODB;
+mongoose.connect(login + pw + end + database, {useNewUrlParser: true, useUnifiedTopology: true});
 
 const itemsSchema = new mongoose.Schema({
   name: String
@@ -142,7 +146,11 @@ app.post("/delete",function(req,res){
 
 })
 
+let port = process.env.PORT;
+if (port == null | port == "") {
+  port = 3000;
+}
 
-app.listen(3000, function() {
-  console.log("Server has started Successfully");
+app.listen(port, function(){
+  console.log("Server started on port 3000");
 });
