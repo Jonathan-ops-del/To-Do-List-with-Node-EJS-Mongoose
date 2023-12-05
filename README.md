@@ -8,7 +8,7 @@ This project from the Angela Yu's Udemy Online Web Development Bootcamp course c
 STEPS TO RUN CODE ON YOUR LOCAL BROWSER::
 
 1) Once you have cloned the project into your preferred code editor, you can run "npm install" in the code editors terminal to install the project dependencies.
-2) Remember you are currently working out of the master branch. Once the dependencies have been installed, can you now open up your HyperTerminal and run "mongod" to have the MongoDB database connection running.
+2) Remember you are currently working out of the master branch. Once the dependencies have been installed, you can now open up your HyperTerminal and run "mongod" to have the MongoDB database connection running.
 3) In the second tab of the HyperTerminal you can enter "mongo" to have the mongo shell open.
 4) Now you can go back to your code editor's terminal and run "nodemon app.js" to have the server running on - http://localhost:3000/.
 5) Once the server & database connection have started you will see your To Do list application open. In this application, you can add to the To Do List & remove from the To Do List.
